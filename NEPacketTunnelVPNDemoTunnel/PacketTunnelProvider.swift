@@ -10,26 +10,21 @@ import NetworkExtension
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
 
-	override func startTunnelWithOptions(options: [String : NSObject]?, completionHandler: (NSError?) -> Void) {
-		// Add code here to start the process of connecting the tunnel.
-	}
+    override func startTunnel(options: [String : NSObject]? = nil, completionHandler: @escaping (Error?) -> Void) {
+        //code
+    }
 
-	override func stopTunnelWithReason(reason: NEProviderStopReason, completionHandler: () -> Void) {
-		// Add code here to start the process of stopping the tunnel.
-		completionHandler()
-	}
+    override func stopTunnel(with reason: NEProviderStopReason, completionHandler: @escaping () -> Void) {
+        //code
+    }
 
-	override func handleAppMessage(messageData: NSData, completionHandler: ((NSData?) -> Void)?) {
-		// Add code here to handle the message.
-		if let handler = completionHandler {
-			handler(messageData)
-		}
-	}
+    override func handleAppMessage(_ messageData: Data, completionHandler: ((Data?) -> Void)? = nil) {
+        //code
+    }
 
-	override func sleepWithCompletionHandler(completionHandler: () -> Void) {
-		// Add code here to get ready to sleep.
-		completionHandler()
-	}
+    override func sleep(completionHandler: @escaping () -> Void) {
+        //code
+    }
 
 	override func wake() {
 		// Add code here to wake up.
