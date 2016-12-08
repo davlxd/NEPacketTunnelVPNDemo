@@ -172,10 +172,12 @@
 				TargetAttributes = {
 					E593CE6A1DF8FC3C00D7265D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9G62EVBAGM;
 						ProvisioningStyle = Manual;
 					};
 					E593CE961DF905AF00D7265D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9G62EVBAGM;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -365,11 +367,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9G62EVBAGM;
 				INFOPLIST_FILE = NEPacketTunnelVPNDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ne.packet.tunnel.vpn.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f730e60f-0a0a-4481-83c1-a3e7be9e9df5";
+				PROVISIONING_PROFILE_SPECIFIER = NEPacketTunnelVPNDemo;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -379,11 +383,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9G62EVBAGM;
 				INFOPLIST_FILE = NEPacketTunnelVPNDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ne.packet.tunnel.vpn.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f730e60f-0a0a-4481-83c1-a3e7be9e9df5";
+				PROVISIONING_PROFILE_SPECIFIER = NEPacketTunnelVPNDemo;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -391,12 +397,13 @@
 		E593CEA11DF905AF00D7265D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9G62EVBAGM;
 				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = ne.packet.tunnel.vpn.demo.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8ce353d5-fd5f-4d5e-b664-8ad294091125";
+				PROVISIONING_PROFILE_SPECIFIER = NEPacketTunnelVPNDemoTunnel;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -405,12 +412,13 @@
 		E593CEA21DF905AF00D7265D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9G62EVBAGM;
 				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = ne.packet.tunnel.vpn.demo.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8ce353d5-fd5f-4d5e-b664-8ad294091125";
+				PROVISIONING_PROFILE_SPECIFIER = NEPacketTunnelVPNDemoTunnel;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -444,6 +452,7 @@
 				E593CEA21DF905AF00D7265D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
