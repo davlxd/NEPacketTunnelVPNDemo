@@ -12,7 +12,33 @@
 		E593CE741DF8FC3C00D7265D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E593CE721DF8FC3C00D7265D /* Main.storyboard */; };
 		E593CE761DF8FC3C00D7265D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E593CE751DF8FC3C00D7265D /* Assets.xcassets */; };
 		E593CE791DF8FC3C00D7265D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E593CE771DF8FC3C00D7265D /* LaunchScreen.storyboard */; };
+		E593CE9C1DF905AF00D7265D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593CE9B1DF905AF00D7265D /* PacketTunnelProvider.swift */; };
+		E593CEA01DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E593CE971DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E593CE9E1DF905AF00D7265D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E593CE631DF8FC3C00D7265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E593CE961DF905AF00D7265D;
+			remoteInfo = NEPacketTunnelVPNDemoTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E593CEA41DF905B000D7265D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E593CEA01DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E593CE6B1DF8FC3C00D7265D /* NEPacketTunnelVPNDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEPacketTunnelVPNDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +48,21 @@
 		E593CE751DF8FC3C00D7265D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E593CE781DF8FC3C00D7265D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E593CE7A1DF8FC3C00D7265D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E593CE971DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NEPacketTunnelVPNDemoTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E593CE9A1DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEPacketTunnelVPNDemoTunnel.entitlements; sourceTree = "<group>"; };
+		E593CE9B1DF905AF00D7265D /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		E593CE9D1DF905AF00D7265D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E593CE681DF8FC3C00D7265D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E593CE941DF905AF00D7265D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E593CE6D1DF8FC3C00D7265D /* NEPacketTunnelVPNDemo */,
+				E593CE981DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel */,
 				E593CE6C1DF8FC3C00D7265D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E593CE6B1DF8FC3C00D7265D /* NEPacketTunnelVPNDemo.app */,
+				E593CE971DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +103,24 @@
 			path = NEPacketTunnelVPNDemo;
 			sourceTree = "<group>";
 		};
+		E593CE981DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				E593CE9B1DF905AF00D7265D /* PacketTunnelProvider.swift */,
+				E593CE9D1DF905AF00D7265D /* Info.plist */,
+				E593CE991DF905AF00D7265D /* Supporting Files */,
+			);
+			path = NEPacketTunnelVPNDemoTunnel;
+			sourceTree = "<group>";
+		};
+		E593CE991DF905AF00D7265D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E593CE9A1DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +131,34 @@
 				E593CE671DF8FC3C00D7265D /* Sources */,
 				E593CE681DF8FC3C00D7265D /* Frameworks */,
 				E593CE691DF8FC3C00D7265D /* Resources */,
+				E593CEA41DF905B000D7265D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E593CE9F1DF905AF00D7265D /* PBXTargetDependency */,
 			);
 			name = NEPacketTunnelVPNDemo;
 			productName = NEPacketTunnelVPNDemo;
 			productReference = E593CE6B1DF8FC3C00D7265D /* NEPacketTunnelVPNDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E593CE961DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E593CEA31DF905AF00D7265D /* Build configuration list for PBXNativeTarget "NEPacketTunnelVPNDemoTunnel" */;
+			buildPhases = (
+				E593CE931DF905AF00D7265D /* Sources */,
+				E593CE941DF905AF00D7265D /* Frameworks */,
+				E593CE951DF905AF00D7265D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEPacketTunnelVPNDemoTunnel;
+			productName = NEPacketTunnelVPNDemoTunnel;
+			productReference = E593CE971DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +171,10 @@
 				ORGANIZATIONNAME = lxd;
 				TargetAttributes = {
 					E593CE6A1DF8FC3C00D7265D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					E593CE961DF905AF00D7265D = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Manual;
 					};
@@ -114,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				E593CE6A1DF8FC3C00D7265D /* NEPacketTunnelVPNDemo */,
+				E593CE961DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +210,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E593CE951DF905AF00D7265D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +229,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E593CE931DF905AF00D7265D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E593CE9C1DF905AF00D7265D /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E593CE9F1DF905AF00D7265D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E593CE961DF905AF00D7265D /* NEPacketTunnelVPNDemoTunnel */;
+			targetProxy = E593CE9E1DF905AF00D7265D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E593CE721DF8FC3C00D7265D /* Main.storyboard */ = {
@@ -259,6 +363,7 @@
 		E593CE7E1DF8FC3C00D7265D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NEPacketTunnelVPNDemo/Info.plist;
@@ -272,12 +377,41 @@
 		E593CE7F1DF8FC3C00D7265D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NEPacketTunnelVPNDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E593CEA11DF905AF00D7265D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E593CEA21DF905AF00D7265D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lxd.NEPacketTunnelVPNDemo.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +436,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E593CEA31DF905AF00D7265D /* Build configuration list for PBXNativeTarget "NEPacketTunnelVPNDemoTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E593CEA11DF905AF00D7265D /* Debug */,
+				E593CEA21DF905AF00D7265D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
