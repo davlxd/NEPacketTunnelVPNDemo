@@ -4,6 +4,8 @@ Server side demo is [here](https://github.com/lxdcn/simple-vpn-demo).
 
 This demo and server side demo are extremely simplified and only for demonstration purposes, a lot of stuff are hard coded. Further design and elaboration are required if you want apply this demo to your app.
 
+Inspired by [ShadowVPN-iOS](https://github.com/clowwindy/ShadowVPN-iOS).
+
 ## Prerequisites to build
 
 1. First, you need to request NetworkExtension entitlement for your Apple ID from Apple by filling the form here: https://developer.apple.com/contact/network-extension. From my experience, it gonna take 2~6 weeks for Apple to process your request.
