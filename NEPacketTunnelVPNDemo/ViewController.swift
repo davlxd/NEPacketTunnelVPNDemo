@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     let mtu = "1400"
     let ip = "10.8.0.2"
     let subnet = "255.255.255.0"
+    let dns = "8.8.8.8,8.4.4.4"
 
 
     private func initVPNTunnelProviderManager() {
@@ -45,7 +46,8 @@ class ViewController: UIViewController {
                                                           "server": self.serverAddress,
                                                           "ip": self.ip,
                                                           "subnet": self.subnet,
-                                                          "mtu": self.mtu
+                                                          "mtu": self.mtu,
+                                                          "dns": self.dns
                 ]
                 providerProtocol.serverAddress = self.serverAddress
                 self.vpnManager.protocolConfiguration = providerProtocol
