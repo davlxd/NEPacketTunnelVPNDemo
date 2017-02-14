@@ -24,4 +24,4 @@ Inspired by [ShadowVPN-iOS](https://github.com/clowwindy/ShadowVPN-iOS).
 
 8. Do the same thing for `NEPacketTunnelVPNDemoTunnel` target.
 
-9. Find a Linux machine, build and run [simple-vpn-demo](https://github.com/lxdcn/simple-vpn-demo), fill its IP address to [NEPacketTunnelVPNDemo/ViewController.swift](https://github.com/lxdcn/NEPacketTunnelVPNDemo/blob/master/NEPacketTunnelVPNDemo/ViewController.swift#L18).
+9. Find a Linux machine, build and run [simple-vpn-demo](https://github.com/lxdcn/simple-vpn-demo), fill its IP address to [ViewController.swift](https://github.com/lxdcn/NEPacketTunnelVPNDemo/blob/master/NEPacketTunnelVPNDemo/ViewController.swift#L18).
