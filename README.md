@@ -25,3 +25,14 @@ Inspired by [ShadowVPN-iOS](https://github.com/clowwindy/ShadowVPN-iOS).
 8. Do the same thing for `NEPacketTunnelVPNDemoTunnel` target.
 
 9. Find a Linux machine, build and run [simple-vpn-demo](https://github.com/lxdcn/simple-vpn-demo), fill its IP address to [ViewController.swift](https://github.com/lxdcn/NEPacketTunnelVPNDemo/blob/master/NEPacketTunnelVPNDemo/ViewController.swift#L18).
+
+## Run
+
+1. After build & run `simple-vpn-demo`, your terminal should be like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/simple-vpn-demo-terminal-before.png).
+
+2. After build & run `NEPacketTunnelVPNDemo` on your iPhone, Xcode log window should look like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/xcode-log-window-before.png), iPhone screen should look like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/iphone-before.png).
+
+3. The `Connect` at the center of iPhone screen is a **BUTTON**, after you click it, your iPhone screen should look like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/iphone-after.png), and Xcode log window should look like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/xcode-log-window-after.png). `simple-vpn-demo` terminal window should look like [this](https://raw.githubusercontent.com/lxdcn/NEPacketTunnelVPNDemo/master/doc/simple-vpn-demo-terminal-after.png), which means VPN server is now receiving traffic.
+
+4. Your IP address displaying on [http://whatismyipaddress.com/](http://whatismyipaddress.com/) on your iPhone should be different before and after click the `Connect` button. thus Q.E.D.
+
