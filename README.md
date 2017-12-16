@@ -8,7 +8,7 @@ Inspired by [ShadowVPN-iOS](https://github.com/clowwindy/ShadowVPN-iOS).
 
 ## Prerequisites to build
 
-1. First, you need to request NetworkExtension entitlement for your Apple ID from Apple by filling the form here: https://developer.apple.com/contact/network-extension. From my experience, it gonna take 2~6 weeks for Apple to process your request.
+1. ~~~First, you need to request NetworkExtension entitlement for your Apple ID from Apple by filling the form here: https://developer.apple.com/contact/network-extension. From my experience, it gonna take 2~6 weeks for Apple to process your request. ~~~ 2017-12-16 Update: This is no longer needed.
 
 2. Then you need an iPhone. Network Extension App cannot run in iOS Simulators, you need a real iPhone to debug.
 
