@@ -18,7 +18,7 @@ Inspired by [ShadowVPN-iOS](https://github.com/clowwindy/ShadowVPN-iOS).
 
 5. Then, again in `App IDs` section of developer portal, edit the 2 App IDs you created at 3rd step, configure `App Groups` to the app group you created at 4th step.
 
-6. Also in developer portal, generate 2 iOS App Development provision profiles for the 2 App IDs created before, make sure `Network Extension` entitlement is selected on 'Do you need additional entitlements?' page. Then download them and save them to disk.
+6. Also in developer portal, generate 2 iOS App Development provision profiles for the 2 App IDs created before, ~~~make sure `Network Extension` entitlement is selected on 'Do you need additional entitlements?' page~~~ (2017-12-27 Update: This is probably not needed as well). Then download them and save them to disk.
 
 7. Open this xcodeproj with XCode, select `NEPacketTunnelVPNDemo` target, in `General > Identity` section, change `Bundle Identifier` to App ID you created. Then import profiles you generated in `General > Signing (Debug)` section and `General > Signing (Release)` section.
 
