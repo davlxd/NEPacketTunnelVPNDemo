@@ -46,12 +46,12 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
     func setupPacketTunnelNetworkSettings() {
         let tunnelNetworkSettings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: self.protocolConfiguration.serverAddress!)
-        tunnelNetworkSettings.iPv4Settings = NEIPv4Settings(addresses: [conf["ip"] as! String], subnetMasks: [conf["subnet"] as! String])
+        tunnelNetworkSettings.ipv4Settings = NEIPv4Settings(addresses: [conf["ip"] as! String], subnetMasks: [conf["subnet"] as! String])
 
         // Refers to NEIPv4Settings#includedRoutes or NEIPv4Settings#excludedRoutes,
         // which can be used as basic whitelist/blacklist routing.
         // This is default routing.
-        tunnelNetworkSettings.iPv4Settings?.includedRoutes = [NEIPv4Route.default()]
+        tunnelNetworkSettings.ipv4Settings?.includedRoutes = [NEIPv4Route.default()]
 
         tunnelNetworkSettings.mtu = Int(conf["mtu"] as! String) as NSNumber?
 
